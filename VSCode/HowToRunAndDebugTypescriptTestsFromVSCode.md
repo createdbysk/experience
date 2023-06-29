@@ -1,4 +1,13 @@
-# How To Debug Typescript Tests from VSCode?
+# How To Run Typescript Tests from VSCode?
+## Run Test
+- Add the line below in `.vscode/settings.json`
+- Change `MY_ENV`, `MY_ENV2` and the values to whatever environment variables you want to use.
+```json
+{
+    "jest.jestCommandLine": "MY_ENV=env1 MY_ENV2=env2 npm test --"
+}
+```
+## Debug Test
 - Install the vscode-jest extension.
 - Add the settings below in `.vscode/launch.json`
 ```json
